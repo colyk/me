@@ -1,9 +1,1 @@
 .idea
-
-/node_modules
-/.pnp
-.pnp.js
-
-/build
-
-npm-debug.log*
