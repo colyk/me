@@ -1,95 +1,90 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
+import Menu from "@/ui/Menu";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+      <Image
+        priority
+        className={"lemon-image"}
+        alt="lemon bacground image"
+        src={"me/lemons.png"}
+        width={510}
+        height={348}
+      ></Image>
+      <Image
+        className={styles.logo}
+        alt="logo icon"
+        src={"me/icon.svg"}
+        width={45}
+        height={45}
+      ></Image>
+      <Menu />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1 id="projects">Projects</h1>
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+        magni sed impedit sequi, eius nam. Porro necessitatibus labore adipisci
+        fugit officiis ab sunt veniam, rerum, dolore vel voluptate delectus
+        laborum.
+        <br />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+        magni sed impedit sequi, eius nam. Porro necessitatibus labore adipisci
+        fugit officiis ab sunt veniam, rerum, dolore vel voluptate delectus
+        laborum.
+        <br />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+        magni sed impedit sequi, eius nam. Porro necessitatibus labore adipisci
+        fugit officiis ab sunt veniam, rerum, dolore vel voluptate delectus
+        laborum.
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h1 id="photos">Photos</h1>
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+        magni sed impedit sequi, eius nam. Porro necessitatibus labore adipisci
+        fugit officiis ab sunt veniam, rerum, dolore vel voluptate delectus
+        laborum.
+        <br />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+        magni sed impedit sequi, eius nam. Porro necessitatibus labore adipisci
+        fugit officiis ab sunt veniam, rerum, dolore vel voluptate delectus
+        laborum.
+        <br />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+        magni sed impedit sequi, eius nam. Porro necessitatibus labore adipisci
+        fugit officiis ab sunt veniam, rerum, dolore vel voluptate delectus
+        laborum.
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <h1 id="blog">Blog</h1>
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+        magni sed impedit sequi, eius nam. Porro necessitatibus labore adipisci
+        fugit officiis ab sunt veniam, rerum, dolore vel voluptate delectus
+        laborum.
+        <br />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+        magni sed impedit sequi, eius nam. Porro necessitatibus labore adipisci
+        fugit officiis ab sunt veniam, rerum, dolore vel voluptate delectus
+        laborum.
+        <br />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+        magni sed impedit sequi, eius nam. Porro necessitatibus labore adipisci
+        fugit officiis ab sunt veniam, rerum, dolore vel voluptate delectus
+        laborum.
       </div>
     </main>
-  )
+  );
 }
