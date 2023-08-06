@@ -9,14 +9,14 @@ export default function Home() {
         priority
         className={"lemon-image"}
         alt="lemon bacground image"
-        src={"me/lemons.png"}
+        src={"/me/lemons.png"}
         width={510}
         height={348}
       ></Image>
       <Image
         className={styles.logo}
         alt="logo icon"
-        src={"me/icon.svg"}
+        src={"/me/icon.svg"}
         width={45}
         height={45}
       ></Image>
