@@ -2,6 +2,7 @@ import Image from "next/image";
 import Menu from "@/components/Menu";
 import Circle from "@/ui/Circle";
 import LanguagePicker from "@/components/LanguagePicker";
+import classNames from "classnames";
 
 export default function Home() {
   return (
@@ -59,25 +60,65 @@ function Greeting() {
 }
 
 function MeAsProgrammer() {
-  return <PageBlock menuId='as-programmer' title="Me as a programmer" styles="mt-52"></PageBlock>;
+  return (
+    <PageBlock
+      menuId="as-programmer"
+      title="Me as a programmer"
+      blockStyles="mt-52"
+    >
+      <div className="mt-8 text-justify">
+        I am a fun guy, gnash my teeth in my sleep. I have lumps in my belly
+        button that my girlfriend, who made this site, cleans up. I love
+        philosophy. If you hire me, I will talk about philosophy to all
+        employees. In three months they will fill up and retire with me, and we
+        will go to Tibet to seek enlightenment. :)
+      </div>
+    </PageBlock>
+  );
 }
 
 function Projects() {
-  return <PageBlock menuId='projects' title="Projects"></PageBlock>;
+  return (
+    <PageBlock menuId="projects" title="Projects" >
+      <div className="mt-8 text-justify">
+      I am a fun guy, gnash my teeth in my sleep. I have lumps in my belly
+        button that my girlfriend, who made this site, cleans up. I love
+        philosophy. If you hire me, I will talk about philosophy to all
+        employees. In three months they will fill up and retire with me, and we
+        will go to Tibet to seek enlightenment. :)
+      </div>
+    </PageBlock>
+  );
 }
 function MeAsPerson() {
-  return <PageBlock menuId='as-person' title="Me as a person"></PageBlock>;
+  return (
+    <PageBlock menuId="as-person" title="Me as a person" >
+      <div className="mt-8 text-justify">
+      I am a fun guy, gnash my teeth in my sleep. I have lumps in my belly
+        button that my girlfriend, who made this site, cleans up. I love
+        philosophy. If you hire me, I will talk about philosophy to all
+        employees. In three months they will fill up and retire with me, and we
+        will go to Tibet to seek enlightenment. :)
+      </div>
+      <Image alt="Mykola Yurchenko photo" src="/me/photo1.jpeg" width={620} height={427}></Image>
+      <div className="mt-8 text-justify">
+      I am a fun guy, gnash my teeth in my sleep. I have lumps in my belly
+        button that my girlfriend, who made this site, cleans up. I love
+        philosophy. If you hire me, I will talk about philosophy to all
+        employees. In three months they will fill up and retire with me, and we
+        will go to Tibet to seek enlightenment. :)
+      </div>
+    </PageBlock>
+  );
 }
 
-function PageBlock({ menuId, title, children, styles }: any) {
-  if (styles) {
-    styles = " " + styles;
-  } else {
-    styles = "";
-  }
+function PageBlock({ menuId, title, children, blockStyles }: any) {
   return (
-    <div id={menuId} className={"flex justify-between mx-24" + styles}>
-      <div className="flex items-end">
+    <div
+      id={menuId}
+      className={classNames("flex flex-col justify-between mx-24 mb-16", blockStyles)}
+    >
+      <div className="flex items-end w-full">
         <Circle />
         <div className="ml-10 text-xl leading-9">{title}</div>
       </div>
