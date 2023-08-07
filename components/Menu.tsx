@@ -3,19 +3,19 @@ import Circle from "../ui/Circle";
 
 const MENU_ITEMS = [
   {
-    href: "",
+    href: "#as-programmer",
     title: "Me as a programer",
   },
   {
-    href: "",
+    href: "#projects",
     title: "Projects",
   },
   {
-    href: "",
+    href: "#as-person",
     title: "Me as a person",
   },
   {
-    href: "",
+    href: "#blog",
     title: "Blog",
   },
 ];
@@ -27,7 +27,7 @@ export default function Menu() {
     </MenuItem>
   ));
   return (
-    <nav style={{marginTop: -50}}>
+    <nav style={{ marginTop: -40 }}>
       <ul className="flex flex-col items-end">
         <MenuItem key="circle">
           <Circle />
@@ -39,5 +39,9 @@ export default function Menu() {
 }
 
 function MenuItem({ children }: any) {
-  return <li className="text-lg leading-9 whitespace-nowrap tracking-wide">{children}</li>;
+  return (
+    <li className="text-xl leading-9 whitespace-nowrap tracking-wide">
+      {children}
+    </li>
+  );
 }

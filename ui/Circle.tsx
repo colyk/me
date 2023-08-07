@@ -3,8 +3,8 @@ export default function Circle() {
     <div
       style={{
         borderRadius: "50%",
-        width: 30,
-        height: 30,
+        width: 27,
+        height: 27,
         backgroundColor: "rgba(207, 188, 98, 1)",
       }}
     ></div>

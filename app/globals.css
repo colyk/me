@@ -7,6 +7,11 @@ html {
     -moz-osx-font-smoothing: grayscale;
     font-smooth: never;
 }
-div, span{
+
+div, span, button {
     font-variant: all-small-caps;
+    
+}
+div, span {
+    cursor: default;
 }
