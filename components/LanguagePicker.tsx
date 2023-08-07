@@ -58,7 +58,7 @@ export default function LanguagePicker() {
 function Dropdown({ selectedLanguage, selectLanguage }: any) {
   let languages = LANGUAGES.filter((l) => l.code != selectedLanguage.code);
   return (
-    <div className="origin-top-left absolute left-0 px-4 py-0">
+    <div className="absolute left-0 origin-top-left px-4 py-0">
       <div
         role="menu"
         aria-orientation="vertical"
@@ -67,7 +67,7 @@ function Dropdown({ selectedLanguage, selectLanguage }: any) {
         {languages.map((language) => (
           <button
             key={language.code}
-            className="block text-base px-4 pl-0 py-1 text-gray-500 hover:text-gray-950"
+            className="block px-4 py-1 pl-0 text-base text-gray-500 hover:text-gray-950"
             role="menuitem"
             onClick={() => selectLanguage(language)}
           >

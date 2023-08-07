@@ -15,7 +15,7 @@ export default function Home() {
         height={348}
       ></Image>
       <Logo />
-      <div className="flex justify-between mx-24">
+      <div className="mx-24 flex justify-between">
         <Greeting />
         <Menu />
       </div>
@@ -28,7 +28,7 @@ export default function Home() {
 
 function Logo() {
   return (
-    <div className="flex items-end absolute top-4 right-24">
+    <div className="absolute right-24 top-4 flex items-end">
       <LanguagePicker />
       <Image
         alt="logo icon"
@@ -42,17 +42,17 @@ function Logo() {
 
 function Greeting() {
   return (
-    <div className="flex flex-col mt-8">
-      <div className="text-black text-6xl tracking-wider">
+    <div className="mt-8 flex flex-col">
+      <div className="text-6xl tracking-wider text-black">
         I am Mykola Yurchenko
       </div>
-      <div className="text-black text-2xl tracking-wide mt-2 whitespace-nowrap">
+      <div className="mt-2 whitespace-nowrap text-2xl tracking-wide text-black">
         I write python code.
       </div>
-      <div className="text-black text-2xl tracking-wide whitespace-nowrap">
+      <div className="whitespace-nowrap text-2xl tracking-wide text-black">
         Make excellent UI.
       </div>
-      <div className="text-black text-2xl tracking-wide whitespace-nowrap">
+      <div className="whitespace-nowrap text-2xl tracking-wide text-black">
         Solve complex problems.
       </div>
     </div>
@@ -66,48 +66,99 @@ function MeAsProgrammer() {
       title="Me as a programmer"
       blockStyles="mt-52"
     >
-      <div className="mt-8 text-justify">
-        I am a fun guy, gnash my teeth in my sleep. I have lumps in my belly
-        button that my girlfriend, who made this site, cleans up. I love
-        philosophy. If you hire me, I will talk about philosophy to all
-        employees. In three months they will fill up and retire with me, and we
-        will go to Tibet to seek enlightenment. :)
-      </div>
+      <p className="p mt-8">
+        I am a highly motivated and experienced Python Fullstack developer
+        passionate about writing efficient and robust code. With over 4 years of
+        professional experience, I have developed a strong skillset in
+        technologies such as Python, Django, JavaScript, Vue, and MySQL. In
+        addition, I have also mentored trainees in Python and frontend
+        development, demonstrating my ability to effectively communicate and
+        share my knowledge with others. In my spare time, I do self-improvement:
+        take courses on Coursera, read books, and write articles on Wikipedia.
+      </p>
+      <SubHeader text="education" />
+      <p className="font-bold">2016 — 2020</p>
+      <p className="p">
+        Bachelor&apos;s Degree, Computer Science, Lublin University of
+        Technology, Poland
+      </p>
+      <SubHeader text="experience" />
+      <p className="font-bold">2023 — present</p>
+      <p className="p">Samsung Poland R&D Center</p>
+      <p className="p">Software Developer</p>
+      <p className="font-bold">2018 — 2023</p>
+      <p className="p">Transition Technologies-Software</p>
+      <p className="p">Python Fullstack Developer</p>
     </PageBlock>
   );
 }
 
 function Projects() {
   return (
-    <PageBlock menuId="projects" title="Projects" >
-      <div className="mt-8 text-justify">
-      I am a fun guy, gnash my teeth in my sleep. I have lumps in my belly
-        button that my girlfriend, who made this site, cleans up. I love
-        philosophy. If you hire me, I will talk about philosophy to all
-        employees. In three months they will fill up and retire with me, and we
-        will go to Tibet to seek enlightenment. :)
+    <PageBlock menuId="projects" title="Projects">
+      <div className="flex flex-wrap items-baseline">
+        <div className="mt-4 pr-2 w-1/2">
+          <ProjectBlock>
+            <SubHeader text="My custom header" color="text-violet" />
+            <p className="mt-2 text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              at eius fugit? Fugit, rem iusto? Quidem natus totam eligendi
+              voluptates necessitatibus omnis a! Unde, inventore. Reiciendis,
+              quas obcaecati. Beatae, inventore.
+            </p>
+          </ProjectBlock>
+          <ProjectBlock>
+            <SubHeader text="My custom header" color="text-violet" />
+            <p className="mt-2 text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              at eius fugit? Fugit, rem iusto? Quidem natus totam eligendi
+              voluptates necessitatibus omnis a! Unde, inventore. Reiciendis,
+              quas obcaecati. Beatae, inventore.
+            </p>
+          </ProjectBlock>
+        </div>
+        <div className="mt-4 pl-2 w-1/2">
+          <ProjectBlock>
+            <SubHeader text="My custom header" color="text-violet" />
+            <p className="mt-2 text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              at eius fugit? Fugit, rem iusto? Quidem natus totam eligendi
+              voluptates necessitatibus omnis a! Unde, inventore. Reiciendis,
+              quas obcaecati. Beatae, inventore.
+            </p>
+            <p className="mt-8 text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              at eius fugit? Fugit, rem iusto? Quidem natus totam eligendi
+              voluptates necessitatibus omnis a! Unde, inventore. Reiciendis,
+              quas obcaecati. Beatae, inventore.
+            </p>
+          </ProjectBlock>
+        </div>
       </div>
     </PageBlock>
   );
 }
 function MeAsPerson() {
   return (
-    <PageBlock menuId="as-person" title="Me as a person" >
-      <div className="mt-8 text-justify">
-      I am a fun guy, gnash my teeth in my sleep. I have lumps in my belly
-        button that my girlfriend, who made this site, cleans up. I love
-        philosophy. If you hire me, I will talk about philosophy to all
-        employees. In three months they will fill up and retire with me, and we
-        will go to Tibet to seek enlightenment. :)
-      </div>
-      <Image alt="Mykola Yurchenko photo" src="/me/photo1.jpeg" width={620} height={427}></Image>
-      <div className="mt-8 text-justify">
-      I am a fun guy, gnash my teeth in my sleep. I have lumps in my belly
-        button that my girlfriend, who made this site, cleans up. I love
-        philosophy. If you hire me, I will talk about philosophy to all
-        employees. In three months they will fill up and retire with me, and we
-        will go to Tibet to seek enlightenment. :)
-      </div>
+    <PageBlock menuId="as-person" title="Me as a person">
+      <p className="mt-8 text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente at
+        eius fugit? Fugit, rem iusto? Quidem natus totam eligendi voluptates
+        necessitatibus omnis a! Unde, inventore. Reiciendis, quas obcaecati.
+        Beatae, inventore.
+      </p>
+      <Image
+        alt="Mykola Yurchenko photo"
+        src="/me/photo1.jpeg"
+        width={620}
+        height={427}
+      ></Image>
+      <p className="mt-8 text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente at
+        eius fugit? Fugit, rem iusto? Quidem natus totam eligendi voluptates
+        necessitatibus omnis a! Unde, inventore. Reiciendis, quas obcaecati.
+        Beatae, inventore.
+      </p>
     </PageBlock>
   );
 }
@@ -116,13 +167,33 @@ function PageBlock({ menuId, title, children, blockStyles }: any) {
   return (
     <div
       id={menuId}
-      className={classNames("flex flex-col justify-between mx-24 mb-16", blockStyles)}
+      className={classNames(
+        "mx-24 mb-16 flex scroll-mt-4 flex-col justify-between",
+        blockStyles
+      )}
     >
-      <div className="flex items-end w-full">
+      <div className="flex w-full items-end">
         <Circle />
         <div className="ml-10 text-xl leading-9">{title}</div>
       </div>
       {children}
     </div>
   );
+}
+
+function SubHeader({ text, color }: any) {
+  return (
+    <span
+      className={classNames(
+        "mt-4 text-lg font-bold",
+        color ? color : "text-green"
+      )}
+    >
+      {text}
+    </span>
+  );
+}
+
+function ProjectBlock({ children }: any) {
+  return <div className="my-4 border-2 border-violet bg-white p-4">{children}</div>;
 }

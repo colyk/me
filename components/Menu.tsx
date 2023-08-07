@@ -40,7 +40,7 @@ export default function Menu() {
 
 function MenuItem({ children }: any) {
   return (
-    <li className="text-xl leading-9 whitespace-nowrap tracking-wide">
+    <li className="whitespace-nowrap text-xl leading-9 tracking-wide">
       {children}
     </li>
   );

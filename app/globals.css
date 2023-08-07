@@ -2,16 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smooth: never;
+@layer components {
+  .p {
+    @apply text-justify text-base font-normal leading-loose;
+  }
+}
+div,
+span,
+button,
+p {
+  font-variant: all-small-caps;
 }
 
-div, span, button {
-    font-variant: all-small-caps;
-    
+div,
+span,
+p {
+  cursor: default;
 }
-div, span {
-    cursor: default;
+
+*::selection {
+  color: white;
+  background-color: #a9aa55;
 }

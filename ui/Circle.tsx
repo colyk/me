@@ -5,7 +5,7 @@ export default function Circle() {
         borderRadius: "50%",
         width: 27,
         height: 27,
-        backgroundColor: "rgba(207, 188, 98, 1)",
+        backgroundColor: "#cfbc62",
       }}
     ></div>
   );
