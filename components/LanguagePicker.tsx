@@ -68,7 +68,7 @@ function Dropdown({ selectedLanguage, selectLanguage }: any) {
         {languages.map((language) => (
           <button
             key={language.code}
-            className="block px-4 py-1 pl-0 text-base text-gray-500 hover:text-gray-950"
+            className="block px-4 py-1 pl-0 text-base text-gray-500 transition-all hover:text-gray-950"
             role="menuitem"
             onClick={() => selectLanguage(language)}
           >

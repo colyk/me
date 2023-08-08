@@ -3,7 +3,6 @@ import Menu from "@/components/Menu";
 import Circle from "@/ui/Circle";
 import LanguagePicker from "@/components/LanguagePicker";
 import classNames from "classnames";
-import Underline from "@/ui/Underline";
 
 export default function Home() {
   return (

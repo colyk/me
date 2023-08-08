@@ -48,3 +48,18 @@ p {
 .menu a:hover svg path {
   stroke-dashoffset: 0;
 }
+
+.circle {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: #cfbc62;
+  transition: all 0.3s ease-in;
+  outline: 1px solid #cfbc62;
+}
+
+.circle:hover {
+  background-color: transparent;
+  outline: 1px solid #cfbc62;
+  outline-offset: -5px;
+}

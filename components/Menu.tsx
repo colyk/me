@@ -15,10 +15,6 @@ const MENU_ITEMS = [
     href: "#as-person",
     title: "Me as a person",
   },
-  {
-    href: "#blog",
-    title: "Blog",
-  },
 ];
 
 export default function Menu() {
@@ -45,6 +41,6 @@ export default function Menu() {
   );
 }
 
-function MenuItem({ children, underlineWidth }: any) {
+function MenuItem({ children }: any) {
   return <li className="menu">{children}</li>;
 }
