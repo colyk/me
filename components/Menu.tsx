@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Circle from "../ui/Circle";
+import Underline from "@/ui/Underline";
 
 const MENU_ITEMS = [
   {
@@ -23,7 +24,13 @@ const MENU_ITEMS = [
 export default function Menu() {
   const items = MENU_ITEMS.map((menuItem) => (
     <MenuItem key={menuItem.href}>
-      <Link href={menuItem.href}>{menuItem.title}</Link>
+      <Link
+        className="whitespace-nowrap text-xl leading-9 tracking-wide"
+        href={menuItem.href}
+      >
+        {menuItem.title}
+        <Underline />
+      </Link>
     </MenuItem>
   ));
   return (
@@ -38,10 +45,6 @@ export default function Menu() {
   );
 }
 
-function MenuItem({ children }: any) {
-  return (
-    <li className="whitespace-nowrap text-xl leading-9 tracking-wide">
-      {children}
-    </li>
-  );
+function MenuItem({ children, underlineWidth }: any) {
+  return <li className="menu">{children}</li>;
 }

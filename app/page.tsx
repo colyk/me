@@ -3,6 +3,7 @@ import Menu from "@/components/Menu";
 import Circle from "@/ui/Circle";
 import LanguagePicker from "@/components/LanguagePicker";
 import classNames from "classnames";
+import Underline from "@/ui/Underline";
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         height={348}
       ></Image>
       <Logo />
-      <div className="mx-24 flex justify-between">
+      <div className="mx-32 flex justify-between">
         <Greeting />
         <Menu />
       </div>
@@ -28,7 +29,7 @@ export default function Home() {
 
 function Logo() {
   return (
-    <div className="absolute right-24 top-4 flex items-end">
+    <div className="absolute right-32 top-4 flex items-end">
       <LanguagePicker />
       <Image
         alt="logo icon"
@@ -97,7 +98,7 @@ function Projects() {
   return (
     <PageBlock menuId="projects" title="Projects">
       <div className="flex flex-wrap items-baseline">
-        <div className="mt-4 pr-2 w-1/2">
+        <div className="mt-4 w-1/2 pr-2">
           <ProjectBlock>
             <SubHeader text="My custom header" color="text-violet" />
             <p className="mt-2 text-justify">
@@ -117,7 +118,7 @@ function Projects() {
             </p>
           </ProjectBlock>
         </div>
-        <div className="mt-4 pl-2 w-1/2">
+        <div className="mt-4 w-1/2 pl-2">
           <ProjectBlock>
             <SubHeader text="My custom header" color="text-violet" />
             <p className="mt-2 text-justify">
@@ -168,7 +169,7 @@ function PageBlock({ menuId, title, children, blockStyles }: any) {
     <div
       id={menuId}
       className={classNames(
-        "mx-24 mb-16 flex scroll-mt-4 flex-col justify-between",
+        "mx-32 mb-16 flex scroll-mt-4 flex-col justify-between",
         blockStyles
       )}
     >
@@ -195,5 +196,7 @@ function SubHeader({ text, color }: any) {
 }
 
 function ProjectBlock({ children }: any) {
-  return <div className="my-4 border-2 border-violet bg-white p-4">{children}</div>;
+  return (
+    <div className="my-4 border-2 border-violet bg-white p-4">{children}</div>
+  );
 }

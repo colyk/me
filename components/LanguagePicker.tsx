@@ -5,6 +5,7 @@ import { useState } from "react";
 const LANGUAGES = [
   { code: "en", name: "en" },
   { code: "ua", name: "ua" },
+  { code: "pl", name: "pl" },
 ];
 
 export default function LanguagePicker() {

@@ -8,6 +8,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      display: ["group-hover"],
       colors: {
         green: "#5C7542",
         violet: "#7B66A7",
