@@ -6,7 +6,7 @@ const play = Play({ weight: ["400", "700"], subsets: ["cyrillic-ext"] });
 
 export const metadata: Metadata = {
   title: "Mykola Yurchenko",
-  description: "Python Fullstack developer",
+  description: "Software Engineer",
 };
 
 export default function RootLayout({
