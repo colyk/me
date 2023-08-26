@@ -3,6 +3,7 @@ import Menu from "@/components/Menu";
 import Circle from "@/ui/Circle";
 import LanguagePicker from "@/components/LanguagePicker";
 import classNames from "classnames";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -89,6 +90,26 @@ function MeAsProgrammer() {
       <p className="font-bold">2018 — 2023</p>
       <p className="p">Transition Technologies-Software</p>
       <p className="p">Python Fullstack Developer</p>
+      <div className="mt-4">
+        <Link
+          className="mr-12 text-lg font-bold"
+          href="https://www.linkedin.com/in/mikolaj-colyk/"
+        >
+          LinkedIn
+        </Link>
+        <Link
+          className="mr-12 text-lg font-bold"
+          href="/resume.pdf"
+        >
+          Resume
+        </Link>
+        <Link
+          className="text-lg font-bold"
+          href="https://github.com/colyk"
+        >
+          Github
+        </Link>
+      </div>
     </PageBlock>
   );
 }
